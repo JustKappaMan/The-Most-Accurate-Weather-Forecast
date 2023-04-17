@@ -23,5 +23,10 @@ async def send_saint_petersburg_forecast(message: types.Message):
     await message.reply("It's raining in Saint-Petersburg, Russia. What else did you expect?")
 
 
+@dp.message_handler(regexp='(?i)^(philadelphia|philly)$')
+async def send_philadelphia_forecast(message: types.Message):
+    await message.reply("It's sunny in Philadelphia, United States. As always.")
+
+
 if __name__ == '__main__':
     executor.start_polling(dp, skip_updates=True)
