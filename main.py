@@ -36,5 +36,10 @@ async def send_philadelphia_forecast(message: types.Message):
     await message.reply("It's sunny in Philadelphia, United States. As always.")
 
 
+@dp.message_handler()
+async def send_error(message: types.Message):
+    await message.reply("I don't know anything about this place. Use /help to see the list of supported locations.")
+
+
 if __name__ == '__main__':
     executor.start_polling(dp, skip_updates=True)
