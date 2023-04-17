@@ -18,5 +18,10 @@ async def send_welcome(message: types.Message):
     await message.reply("Hi! I'm the most accurate weather forecaster on Telegram.")
 
 
+@dp.message_handler(regexp='(?i)^saint[ -]petersburg$')
+async def send_saint_petersburg_forecast(message: types.Message):
+    await message.reply("It's raining in Saint-Petersburg, Russia. What else did you expect?")
+
+
 if __name__ == '__main__':
     executor.start_polling(dp, skip_updates=True)
