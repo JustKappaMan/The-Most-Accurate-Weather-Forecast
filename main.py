@@ -3,7 +3,6 @@ import logging
 
 from aiogram import Bot, Dispatcher, executor, types
 
-
 logging.basicConfig(level=logging.INFO)
 
 if (TOKEN := os.getenv('WEATHER_FORECASTER_TOKEN')) is None:
@@ -23,12 +22,18 @@ async def send_help(message: types.Message):
     await message.answer("Just send me the name of the city and I'll provide you with up-to-date weather info.\n\n"
                          'Available cities:\n'
                          '1. Saint-Petersburg, Russia\n'
-                         '2. Philadelphia, United States')
+                         '2. Yakutsk, Russia\n'
+                         '3. Philadelphia, United States')
 
 
 @dp.message_handler(regexp='(?i)^saint[ -]petersburg$')
 async def send_saint_petersburg_forecast(message: types.Message):
     await message.reply("It's raining in Saint-Petersburg, Russia. What else did you expect?")
+
+
+@dp.message_handler(regexp='(?i)^yakutsk$')
+async def send_yakutsk_forecast(message: types.Message):
+    await message.reply("It's freezing cold in Yakutsk, Russia. Don't forget your ushanka and valenki.")
 
 
 @dp.message_handler(regexp='(?i)^(philadelphia|philly)$')
