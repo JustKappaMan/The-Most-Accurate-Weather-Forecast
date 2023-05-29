@@ -1,5 +1,6 @@
 import os
 import logging
+import pathlib
 
 from aiogram import Bot, Dispatcher, executor, types
 
@@ -28,7 +29,8 @@ async def send_help(message: types.Message):
 
 @dp.message_handler(regexp='(?i)^saint[ -]petersburg$')
 async def send_saint_petersburg_forecast(message: types.Message):
-    await message.reply("It's raining in Saint-Petersburg, Russia. What else did you expect?")
+    with open(pathlib.Path('static', 'images', 'saint-petersburg.jpg'), 'rb') as photo:
+        await message.reply_photo(photo, "🌧️ It's raining in Saint-Petersburg, Russia. What else did you expect?")
 
 
 @dp.message_handler(regexp='(?i)^yakutsk$')
