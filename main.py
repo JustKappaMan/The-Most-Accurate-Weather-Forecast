@@ -35,7 +35,9 @@ async def send_saint_petersburg_forecast(message: types.Message):
 
 @dp.message_handler(regexp='(?i)^yakutsk$')
 async def send_yakutsk_forecast(message: types.Message):
-    await message.reply("It's freezing cold in Yakutsk, Russia. Don't forget your ushanka and valenki.")
+    with open(pathlib.Path('static', 'images', 'yakutsk.jpg'), 'rb') as photo:
+        await message.reply_photo(photo,
+                                  "❄️ It's freezing cold in Yakutsk, Russia. Don't forget your ushanka and valenki.")
 
 
 @dp.message_handler(regexp='(?i)^(philadelphia|philly)$')
