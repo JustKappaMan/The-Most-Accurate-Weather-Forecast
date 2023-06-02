@@ -17,3 +17,4 @@ Big thanks to:
 * [Hans-Jurgen Mager](https://unsplash.com/@hansjurgen007) for the photo of Yakutsk
 * [Trev Adams](https://www.pexels.com/@trev-takes-photos) for the photo of Philadelphia
 * [MissSaber444](https://www.deviantart.com/misssaber444) for the painting of Atlantis
+* Creator of [GachiVoiceBot](https://t.me/GachiVoiceBot) for the phrase by Billy Herrington
