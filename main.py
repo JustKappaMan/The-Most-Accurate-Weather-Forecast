@@ -53,6 +53,12 @@ async def send_atlantis_forecast(message: types.Message):
         await message.reply_photo(photo, "🌊 Hmm. I'd recommend you get a diving suit on.")
 
 
+@dp.message_handler(regexp='(?i)billy')
+async def send_billy_easter_egg(message: types.Message):
+    with open(pathlib.Path('static', 'sounds', 'billy.ogg'), 'rb') as sound:
+        await message.reply_voice(sound, 'Did you just mention Billy?!')
+
+
 @dp.message_handler()
 async def send_error(message: types.Message):
     await message.reply("I don't know anything about this place. Use /help to see the list of supported locations.")
