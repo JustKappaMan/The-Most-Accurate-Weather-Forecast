@@ -50,7 +50,7 @@ async def send_philadelphia_forecast(message: types.Message):
 @dp.message_handler(regexp='(?i)^(atlantis|atlantida)$')
 async def send_atlantis_forecast(message: types.Message):
     with open(pathlib.Path('static', 'images', 'atlantis.jpg'), 'rb') as photo:
-        await message.reply_photo(photo, "🌊 Hmm. I'd recommend you to get a diving suit on.")
+        await message.reply_photo(photo, "🌊 Hmm. I'd recommend you get a diving suit on.")
 
 
 @dp.message_handler()
