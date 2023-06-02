@@ -56,7 +56,7 @@ async def send_atlantis_forecast(message: types.Message):
 @dp.message_handler(regexp='(?i)billy')
 async def send_billy_easter_egg(message: types.Message):
     with open(pathlib.Path('static', 'sounds', 'billy.ogg'), 'rb') as sound:
-        await message.reply_voice(sound, 'Did you just mention Billy?!')
+        await message.reply_voice(sound, '🤬 Did you just mention <b>Billy</b>?!', parse_mode='HTML')
 
 
 @dp.message_handler()
