@@ -18,3 +18,4 @@ Big thanks to:
 * [Trev Adams](https://www.pexels.com/@trev-takes-photos) for the photo of Philadelphia
 * [MissSaber444](https://www.deviantart.com/misssaber444) for the painting of Atlantis
 * Creator of [GachiVoiceBot](https://t.me/GachiVoiceBot) for the phrase by Billy Herrington
+* [JetBrains](https://www.jetbrains.com/community/opensource) for Open Source development license
