@@ -26,7 +26,11 @@ async def send_help(message: types.Message):
         '1. Saint-Petersburg, Russia\n'
         '2. Yakutsk, Russia\n'
         '3. Philadelphia, United States\n'
-        '4. Atlantis'
+        '4. Atlantis\n\n'
+        '👨‍💻 [Author](https://t.me/SuspiciousUser)\n'
+        '🤖 [Source code](https://github.com/JustKappaMan/The-Most-Accurate-Weather-Forecast)',
+        parse_mode='Markdown',
+        disable_web_page_preview=True
     )
 
 
