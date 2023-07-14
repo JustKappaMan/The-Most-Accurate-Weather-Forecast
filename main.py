@@ -20,12 +20,14 @@ async def send_welcome(message: types.Message):
 
 @dp.message_handler(commands=['help'])
 async def send_help(message: types.Message):
-    await message.answer("Just send me the name of the city and I'll provide you with up-to-date weather info.\n\n"
-                         'Available cities:\n'
-                         '1. Saint-Petersburg, Russia\n'
-                         '2. Yakutsk, Russia\n'
-                         '3. Philadelphia, United States',
-                         '4. Atlantis')
+    await message.answer(
+        "Just send me the name of the city and I'll provide you with up-to-date weather info.\n\n"
+        'Available cities:\n'
+        '1. Saint-Petersburg, Russia\n'
+        '2. Yakutsk, Russia\n'
+        '3. Philadelphia, United States',
+        '4. Atlantis'
+    )
 
 
 @dp.message_handler(regexp='(?i)^saint[ -]petersburg$')
@@ -37,8 +39,10 @@ async def send_saint_petersburg_forecast(message: types.Message):
 @dp.message_handler(regexp='(?i)^yakutsk$')
 async def send_yakutsk_forecast(message: types.Message):
     with open(pathlib.Path('static', 'images', 'yakutsk.jpg'), 'rb') as photo:
-        await message.reply_photo(photo,
-                                  "❄️ It's freezing cold in Yakutsk, Russia. Don't forget your ushanka and valenki.")
+        await message.reply_photo(
+            photo,
+            "❄️ It's freezing cold in Yakutsk, Russia. Don't forget your ushanka and valenki."
+        )
 
 
 @dp.message_handler(regexp='(?i)^(philadelphia|philly)$')
