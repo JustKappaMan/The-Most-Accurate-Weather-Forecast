@@ -6,8 +6,8 @@ from aiogram import Bot, Dispatcher, executor, types
 
 logging.basicConfig(level=logging.INFO)
 
-if (TOKEN := os.getenv('WEATHER_FORECASTER_TOKEN')) is None:
-    raise ValueError('Error! Assign your Telegram bot token to WEATHER_FORECASTER_TOKEN system variable.')
+if (TOKEN := os.getenv('WEATHER_FORECAST_TOKEN')) is None:
+    raise ValueError('Error! Assign your Telegram bot token to WEATHER_FORECAST_TOKEN system variable.')
 
 bot = Bot(token=TOKEN)
 dp = Dispatcher(bot)
