@@ -25,7 +25,7 @@ async def send_help(message: types.Message):
         'Available cities:\n'
         '1. Saint-Petersburg, Russia\n'
         '2. Yakutsk, Russia\n'
-        '3. Philadelphia, United States'
+        '3. Philadelphia, United States\n'
         '4. Atlantis'
     )
 
