@@ -9,14 +9,15 @@ Available places:
 * Yakutsk, Russia
 * Philadelphia, United States
 * Atlantis
-## License
-This project is licensed under the MIT License.
+
 ## Credits
-Big thanks to:
 * [Freepik](https://www.flaticon.com/authors/freepik) for the botpic
 * [Roman Ska](https://www.pexels.com/@roman-ska-3453281) for the photo of Saint Petersburg
 * [Hans-Jurgen Mager](https://unsplash.com/@hansjurgen007) for the photo of Yakutsk
 * [Trev Adams](https://www.pexels.com/@trev-takes-photos) for the photo of Philadelphia
 * [MissSaber444](https://www.deviantart.com/misssaber444) for the painting of Atlantis
-* Creator of [GachiVoiceBot](https://t.me/GachiVoiceBot) for the phrase by Billy Herrington
-* [JetBrains](https://www.jetbrains.com/community/opensource) for Open Source development license
+* Creator of the [GachiVoiceBot](https://t.me/GachiVoiceBot) for the phrase by Billy Herrington
+* [JetBrains](https://www.jetbrains.com) for [Open Source Development license](https://www.jetbrains.com/community/opensource)
+
+## License
+This project is licensed under the MIT License.
